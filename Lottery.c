@@ -17,12 +17,12 @@ void main()
     {
        if (YourLotteryNo == WinLotteryNo[i])
        {
-          printf("Congratulations You Won %8.2f baht\n", WinAmount[i]);
+          printf("You are the winner  %8.2f baht\n", WinAmount[i]);
           won = 1;
        }
     }
     if (!won)
-      printf("Sorry Lottery Number %4d did not win\n", YourLotteryNo);
+      printf("Fail Lottery Number %4d did not win\n", YourLotteryNo);
     printf("Enter your Lottery Number (0 to end): ");
     scanf("%d", &YourLotteryNo);
   }
